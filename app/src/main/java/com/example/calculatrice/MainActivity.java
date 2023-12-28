@@ -223,10 +223,16 @@ public class MainActivity extends AppCompatActivity {
             }
         } catch (ArithmeticException e) {
             // Handle division by zero or other arithmetic errors
-            Toast.makeText(this, "Error in expression", Toast.LENGTH_SHORT).show();
+            // Handle division by zero
+            if (e.getMessage().contains("by zero")) {
+                Toast.makeText(this, "Can't divide by zero", Toast.LENGTH_SHORT).show();
+            } else {
+                // Handle other arithmetic errors
+                Toast.makeText(this, "Error in expression", Toast.LENGTH_SHORT).show();
+            }
         } catch (Exception e) {
             // Handle other types of errors
-            Toast.makeText(this, "Invalid expression", Toast.LENGTH_SHORT).show();
+            // Toast.makeText(this, "Invalid expression", Toast.LENGTH_SHORT).show();
         }
     }
 
