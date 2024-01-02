@@ -1,6 +1,6 @@
 # Project Name - *Calculator*
 
-This is a simple calculator
+This is a simple calculator working properly.
 
 ## Wireframe 
 
@@ -10,4 +10,4 @@ Here's a Mockup of implemented calculator:
 
 ## License
 
-    Copyright 2022] [Beauchant]
+    Copyright 2023/12/29] [Beauchant]
